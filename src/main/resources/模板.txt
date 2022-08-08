@@ -1,0 +1,6 @@
+{{riqi.DATA}}
+{{city.DATA}}天气：{{tianqi.DATA}}
+今日温度：{{low.DATA}} ~ {{high.DATA}}
+今天是我们恋爱的第 {{lianai.DATA}} 天
+
+{{caihongpi.DATA}}
