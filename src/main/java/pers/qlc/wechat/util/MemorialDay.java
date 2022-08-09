@@ -11,11 +11,11 @@ public class MemorialDay {
     static String lianAi = "2022-07-30";
 
     // 已经过去date多少天
-    public static int after(String date) {
+    public static int time(String date) {
         int day = 0;
         try {
-            long time = System.currentTimeMillis() - simpleDateFormat.parse(date).getTime();
-            day = (int) (time / 86400000L);
+            long time = Math.abs(System.currentTimeMillis() - simpleDateFormat.parse(date).getTime());
+            day = (int) (time / 1000 / 60 / 60 / 24);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -23,11 +23,11 @@ public class MemorialDay {
     }
 
     public static int getLianAi() {
-        return after(lianAi);
+        return time(lianAi);
     }
 
     public static void main(String[] args) {
-        System.out.println(getLianAi());
+        System.out.println(time(lianAi));
     }
 
 }

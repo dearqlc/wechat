@@ -49,7 +49,7 @@ public class TianAPI {
     }
 
     public static void main(String[] args) {
-        System.out.println("\n" + getCaiHongPi() + "\n");
+        System.out.println(getCaiHongPi());
         System.out.println(getWeather());
     }
 

@@ -11,9 +11,6 @@ import java.io.IOException;
 
 public class HttpUtil {
 
-    public HttpUtil() {
-    }
-
     public static String getUrl(String url) throws IOException {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         String str;
@@ -22,7 +19,6 @@ public class HttpUtil {
             httpGet.addHeader("Connection", "close");
             RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(18000).setConnectTimeout(5000).setConnectionRequestTimeout(18000).build();
             httpGet.setConfig(requestConfig);
-
             try (CloseableHttpResponse response = httpclient.execute(httpGet)) {
                 Object entity;
                 if (response.getStatusLine().getStatusCode() != 200) {
@@ -40,7 +36,6 @@ public class HttpUtil {
         } finally {
             httpclient.close();
         }
-
         return str;
     }
 
