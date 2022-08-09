@@ -15,7 +15,7 @@ public class MemorialDay {
         int day = 0;
         try {
             long time = Math.abs(System.currentTimeMillis() - simpleDateFormat.parse(date).getTime());
-            day = (int) (time / 1000 / 60 / 60 / 24);
+            day = (int) (time / 1000L / 60L / 60L / 24L);
         } catch (ParseException e) {
             e.printStackTrace();
         }
