@@ -8,7 +8,7 @@ public class MemorialDay {
     private static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     // 恋爱
-    static String lianAi = "2022-07-30";
+    static String love = "2022-07-30";
 
     // 已经过去date多少天
     public static int time(String date) {
@@ -23,11 +23,11 @@ public class MemorialDay {
     }
 
     public static int getLianAi() {
-        return time(lianAi);
+        return time(love);
     }
 
     public static void main(String[] args) {
-        System.out.println(time(lianAi));
+        System.out.println(time(love));
     }
 
 }
