@@ -9,7 +9,14 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 
+/**
+ * @author QLC
+ */
 public class HttpUtil {
+
+    private static final int STATUS_200 = 200;
+
+    private static final int STATUS_404 = 404;
 
     public static String getUrl(String url) throws IOException {
         CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -21,8 +28,8 @@ public class HttpUtil {
             httpGet.setConfig(requestConfig);
             try (CloseableHttpResponse response = httpclient.execute(httpGet)) {
                 Object entity;
-                if (response.getStatusLine().getStatusCode() != 200) {
-                    if (response.getStatusLine().getStatusCode() != 404) {
+                if (response.getStatusLine().getStatusCode() != STATUS_200) {
+                    if (response.getStatusLine().getStatusCode() != STATUS_404) {
                         return null;
                     }
                     entity = "";
