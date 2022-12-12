@@ -25,7 +25,7 @@ public class TianApi {
     /**
      * 查询天气的城市名
      */
-    public static final String CITY = "杭州";
+    public static final String CITY = "绍兴";
 
     private static final String NAME = "裘力成";
 

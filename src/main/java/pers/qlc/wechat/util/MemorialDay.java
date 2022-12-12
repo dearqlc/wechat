@@ -10,7 +10,7 @@ public class MemorialDay {
 
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
 
-    private static final String LOVE = "2000-07-17";
+    private static final String LOVE = "2022-12-10";
 
     public static int time(String date) {
         int day = 0;

@@ -25,7 +25,7 @@ public class Pusher {
     /**
      * 模板ID
      */
-    private static final String TEMPLATE_ID = "CqiFyVfHZNKNDiQ66gPLZfyYMo6f63z2lMP9EClBTRQ";
+    private static final String TEMPLATE_ID = "ij-21g5KI28Ul3N27cQYiFe86Ez0N_WKwZC9DG-oP_U";
 
     public static void push(String openId){
         // 1.配置

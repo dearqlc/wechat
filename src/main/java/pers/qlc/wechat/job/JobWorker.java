@@ -11,13 +11,13 @@ import pers.qlc.wechat.util.Pusher;
 public class JobWorker {
 
     /**
-     * 要推送的用户openid
+     * OPENID
      */
-    private static final String OPEN_ID = "oOOdQ5waS5bVDdgrwb6KlZMiYNkQ";
+    private static final String LY_OPEN_ID = "oOOdQ5wHqj9RL1z9LBreT91_MW20";
 
     @Scheduled(cron = "0 30 7 * * ?")
     public void goodMorning(){
-        Pusher.push(OPEN_ID);
+        Pusher.push(LY_OPEN_ID);
     }
 
 }
